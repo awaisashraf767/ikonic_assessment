@@ -1,11 +1,10 @@
 {
     "db": {
-        "host": "",
-        "port": "",
-        "database": "",
-        "rule_engine_name": "",
-        "username": "",
-        "password": "",
-        "dialect": ""
+        "host": "127.0.0.1",
+        "port": "3306",
+        "database": "ikonic_assessment",
+        "username": "root",
+        "password": "root",
+        "dialect": "mysql"
         }
 }
