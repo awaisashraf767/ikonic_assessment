@@ -52,7 +52,6 @@ const definition = {
     },
 };
 
-
 const Users = db.define("Users", definition, { timestamps: false })
 
 

@@ -6,5 +6,8 @@
         "username": "root",
         "password": "root",
         "dialect": "mysql"
-        }
+    },
+    "jwt": {
+        "secret": "MyNameIsAwaisAshraf"
+    }
 }

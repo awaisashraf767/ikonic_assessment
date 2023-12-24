@@ -1,5 +1,5 @@
 const { Sequelize } = require('sequelize');
-const fs=require("fs")
+const fs = require("fs")
 const config = require("../../config.json")
 
 const initializeModels = (db, modelsPath) => {
@@ -30,7 +30,7 @@ const connectDB = () => {
             host: config.db.host,
             port: config.db.port,
             dialect: config.db.dialect,
-            logging: false,
+            logging: true,
             benchmark: false,
         })
         db.authenticate().then(() => console.log('Connection has been established successfully.')).catch((err) => console.error("Error While Connecting database", err));
@@ -53,4 +53,4 @@ const getDb = () => {
         console.log("Error While Connecting database", error);
     }
 }
-module.exports = {getDb,connectDB};
+module.exports = { getDb, connectDB };

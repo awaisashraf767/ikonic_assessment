@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "b80fd400-04f8-415e-86f1-9fb1275dc052",
+		"name": "IKONIC_Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Task1",
+			"item": [
+				{
+					"name": "Download_Content",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"urls\": [\n        \"https://api.agify.io/?name=meelad\",\n        \"https://jsonplaceholder.typicode.com/posts/1\",\n        \"https://www.metro-online.pk/home\",\n        \"https://api.publicapis.org/entries\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/downlaod_content",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"downlaod_content"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task 3",
+			"item": [
+				{
+					"name": "List_Text_Files",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/list_text_files",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"list_text_files"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task 4",
+			"item": [
+				{
+					"name": "Get Notes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo2LCJuYW1lIjoiQXdhaXMgQXNocmFmIiwiZW1haWwiOiJjaGF1ZGhhcnlhd2Fpczc2Nzc1QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiNDEwODgyOTg0Mjc4MyIsInBob25lX25vIjoiMDMyMzUwNDUxMDMiLCJnZW5kZXIiOiJNYWxlIiwiZGF0ZV9vZl9iaXJ0aCI6IjIwMDItMDctMTciLCJjaXR5IjoiTGFob3JlIiwiY291bnRyeSI6IlBha2lzdGFuIiwiYWN0aXZlIjp0cnVlLCJhcmNoaXZlIjpmYWxzZX0sImlhdCI6MTcwMzQzNTM4MSwiZXhwIjoxNzAzNDM1NjgxfQ._gKF7a78-23cByhQ-qhsajzpm8cZuhlanNgUavMxBt4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/read/notes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"read",
+								"notes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Note",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo2LCJuYW1lIjoiQXdhaXMgQXNocmFmIiwiZW1haWwiOiJjaGF1ZGhhcnlhd2Fpczc2Nzc1QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiNDEwODgyOTg0Mjc4MyIsInBob25lX25vIjoiMDMyMzUwNDUxMDMiLCJnZW5kZXIiOiJNYWxlIiwiZGF0ZV9vZl9iaXJ0aCI6IjIwMDItMDctMTciLCJjaXR5IjoiTGFob3JlIiwiY291bnRyeSI6IlBha2lzdGFuIiwiYWN0aXZlIjp0cnVlLCJhcmNoaXZlIjpmYWxzZX0sImlhdCI6MTcwMzQzNTM4MSwiZXhwIjoxNzAzNDM1NjgxfQ._gKF7a78-23cByhQ-qhsajzpm8cZuhlanNgUavMxBt4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\":\"This is my Fourth Task\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/write/note",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"write",
+								"note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Note",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo2LCJuYW1lIjoiQXdhaXMgQXNocmFmIiwiZW1haWwiOiJjaGF1ZGhhcnlhd2Fpczc2Nzc1QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiNDEwODgyOTg0Mjc4MyIsInBob25lX25vIjoiMDMyMzUwNDUxMDMiLCJnZW5kZXIiOiJNYWxlIiwiZGF0ZV9vZl9iaXJ0aCI6IjIwMDItMDctMTciLCJjaXR5IjoiTGFob3JlIiwiY291bnRyeSI6IlBha2lzdGFuIiwiYWN0aXZlIjp0cnVlLCJhcmNoaXZlIjpmYWxzZX0sImlhdCI6MTcwMzQzNTM4MSwiZXhwIjoxNzAzNDM1NjgxfQ._gKF7a78-23cByhQ-qhsajzpm8cZuhlanNgUavMxBt4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\":\"This is my fifth Task\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/update/note/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"update",
+								"note",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Note",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo2LCJuYW1lIjoiQXdhaXMgQXNocmFmIiwiZW1haWwiOiJjaGF1ZGhhcnlhd2Fpczc2Nzc1QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiNDEwODgyOTg0Mjc4MyIsInBob25lX25vIjoiMDMyMzUwNDUxMDMiLCJnZW5kZXIiOiJNYWxlIiwiZGF0ZV9vZl9iaXJ0aCI6IjIwMDItMDctMTciLCJjaXR5IjoiTGFob3JlIiwiY291bnRyeSI6IlBha2lzdGFuIiwiYWN0aXZlIjp0cnVlLCJhcmNoaXZlIjpmYWxzZX0sImlhdCI6MTcwMzQzNTM4MSwiZXhwIjoxNzAzNDM1NjgxfQ._gKF7a78-23cByhQ-qhsajzpm8cZuhlanNgUavMxBt4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/delete/note/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"delete",
+								"note",
+								"15"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task 5",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Awais Ashraf\",\n    \"email\":\"chaudharyawais76775@gmail.com\",\n    \"phone_no\":\"03235045103\",\n    \"password\":\"12345\",\n    \"gender\":\"Male\",\n    \"date_of_birth\":\"2002-07-17\",\n    \"city\":\"Lahore\",\n    \"country\":\"Pakistan\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User To Generate JWT Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"chaudharyawais76775@gmail.com\",\n    \"password\":\"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task 2",
+			"item": [
+				{
+					"name": "Error Handling",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/error_handle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"error_handle"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
