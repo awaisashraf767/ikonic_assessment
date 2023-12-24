@@ -1,0 +1,11 @@
+{
+    "db": {
+        "host": "",
+        "port": "",
+        "database": "",
+        "rule_engine_name": "",
+        "username": "",
+        "password": "",
+        "dialect": ""
+        }
+}
