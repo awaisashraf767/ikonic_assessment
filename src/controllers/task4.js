@@ -59,7 +59,7 @@ const delete_note = (req, res) => {
                 id: req.params.noteId
             }
         }
-        let payload_to_update = { archive: true }
+        let payload_to_update = { archive: true }    // I add a flag that has a type of Boolean to delete data so the data exist in our db but user is unable to see it again  because when he gets the data there is pre defined filter of archive false . All of this because data is the main asset of any  system 
         const delete_note = Notes.update(payload_to_update, condition)
         console.log(delete_note)
         return res.status(200).send({ msg: "deleted" })
